@@ -5,11 +5,11 @@
     "label": "Software Developer",
     "animated_main_label": "developer",
     "animated_secondary_initial_label": "software",
-    "animated_secondary_final_label": "full_stack",
+    "animated_secondary_final_label": "fullstack",
     "image": "/pfp.png",
     "email": "anmolsingh51200@gmail.com",
     "url": "",
-    "summary": "Front-end developer with experience building and deploying production-ready web apps in freelance teams. Delivered two client websites and worked closely with teams to create scalable, maintainable solutions.",
+    "summary": "Full Stack developer with experience building and deploying production-ready web apps in freelance teams. Delivered two client websites and worked closely with teams to create scalable, maintainable solutions.",
     "theme": "red",
     "location": {
       "address": "Panipat",
