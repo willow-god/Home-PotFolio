@@ -7,34 +7,118 @@ import BackgroundArt from "../components/BackgroundArt.astro"
 
 interface Props {
   title: string;
+  description?: string;
+  image?: string;
+  canonicalURL?: string;
+  keywords?: string[];
 }
 
-const { title } = Astro.props;
+const { 
+  title,
+  description = CV.basics.summary,
+  image = CV.basics.image,
+  canonicalURL = CV.basics.url,
+  keywords = [
+    "Anmol Singh",
+    "Full Stack Developer",
+    "Software Engineer",
+    "Web Development",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Go",
+    "Portfolio",
+    "E-commerce",
+    "Music App",
+    "Social Media App",
+    "Panipat",
+    "India",
+    CV.basics.label
+  ]
+} = Astro.props;
 
-const { image, summary, url, theme } = CV.basics;
+const { url, theme, name, location } = CV.basics;
+const { city, region } = location;
+
+// Create a more detailed description
+const detailedDescription = `${name} is a ${CV.basics.label} based in ${city}, ${region}. ${description} Specializing in modern web technologies including Next.js, React, and TypeScript. View portfolio projects including e-commerce platforms, music streaming apps, and social media applications.`;
+
+// Create structured data for better SEO
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": name,
+  "jobTitle": CV.basics.label,
+  "url": url,
+  "sameAs": CV.basics.profiles.map(profile => profile.url),
+  "image": image,
+  "description": detailedDescription,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": city,
+    "addressRegion": region,
+    "addressCountry": "IN"
+  },
+  "knowsAbout": CV.skills.map(skill => skill.name),
+  "worksFor": CV.work?.map(work => ({
+    "@type": "Organization",
+    "name": work.name,
+    "position": work.position
+  }))
+};
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
     <title>{title}</title>
-    <meta name="description" content={summary} />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <meta name="title" content={title} />
+    <meta name="description" content={detailedDescription} />
+    <meta name="author" content={name} />
+    <meta name="keywords" content={keywords.join(", ")} />
+    <meta name="geo.region" content="IN-HR" />
+    <meta name="geo.placename" content={city} />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <!-- Preload critical assets -->
     <link rel="preload" as="image" href={image} />
-    <meta property="og:url" content={url} />
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={summary} />
-    <meta property="og:image" content="" />
-    <meta name="referrer" content="no-referrer" />
+    <meta property="og:description" content={detailedDescription} />
+    <meta property="og:image" content={image} />
+    <meta property="og:site_name" content={`${name}'s Portfolio`} />
+    <meta property="og:locale" content="en_IN" />
+    
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content={url.split("//")[1] ?? ""} />
-    <meta property="twitter:url" content={url} />
+    <meta name="twitter:domain" content={url.split("//")[1] ?? ""} />
+    <meta name="twitter:url" content={url} />
     <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={summary} />
+    <meta name="twitter:description" content={detailedDescription} />
     <meta name="twitter:image" content={image} />
+    <meta name="twitter:creator" content={CV.basics.profiles.find(p => p.network === 'X / Twitter')?.username} />
+    
+    <!-- Additional meta tags -->
+    <meta name="theme-color" content={theme === 'dark' ? '#1a1a1a' : '#ffffff'} />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    
     {CV?.analyticsCode && <script is:inline src={CV.analyticsCode} />}
     <Analytics />
   </head>
