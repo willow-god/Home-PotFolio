@@ -6,7 +6,7 @@ const contextCursor = (props: CProps = {}) => {
   // Default props
   props = {
     radius: props.radius || 20,
-    transitionSpeed: props.transitionSpeed || 0.2,
+    transitionSpeed: props.transitionSpeed || 0.16,
     parallaxIndex: props.parallaxIndex || 10,
     hoverPadding: props.hoverPadding || 6,
   };
