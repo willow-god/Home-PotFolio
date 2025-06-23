@@ -228,17 +228,6 @@
     }
   }
 
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  ::-webkit-scrollbar-track {
-    @apply bg-nvim-bg;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    @apply bg-nvim-gray rounded;
-  }
   .modified-cursor-none {
     cursor: none !important;
   }
@@ -285,4 +274,26 @@
       opacity: 0;
     }
   }
+
+  .scrollbar-thin::-webkit-scrollbar { height: 10px; }
+  .scrollbar-thumb-gray-800::-webkit-scrollbar-thumb { background-color: #a0aec0; border-radius: 4px; }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #222;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #222;
+}
+
+html, body {
+  @apply scrollbar-hide;
 }

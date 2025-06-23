@@ -70,5 +70,6 @@ module.exports = {
     require('@tailwindcss/typography'),
     daisyui,
     scrollbar,
+    require('tailwind-scrollbar-hide'),
   ],
 };
