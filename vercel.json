@@ -1,3 +1,7 @@
 {
-  "buildCommand": "astro build --config=./astro.config.vercel.mjs"
+  "buildCommand": "astro build --config=./astro.config.vercel.mjs",
+  "framework": {
+    "name": "astro",
+    "version": "20"
+  }
 }
