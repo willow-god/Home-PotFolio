@@ -15,7 +15,6 @@ interface Props {
 
 const { 
   title,
-  description = CV.basics.summary,
   image = CV.basics.image,
   canonicalURL = CV.basics.url,
   keywords = [
@@ -155,8 +154,8 @@ const breadcrumbSchema = {
     <meta name="generator" content={Astro.generator} />
     
     <!-- Structured Data -->
-    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
-    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
     
     {CV?.analyticsCode && <script is:inline src={CV.analyticsCode} />}
     <Analytics />

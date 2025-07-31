@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { createParticleCanvas } from 'package-particlefx';
-import { basics } from '@cv';
+
 
 function ProfileImage() {
-  const { image } = basics;
   const containerRef = useRef(null);
 
   const getResponsiveSize = () => {

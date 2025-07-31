@@ -9,7 +9,7 @@ import { certificates } from '@cv'
   <ul class='space-y-4 py-3 print:space-y-0'>
     {
       education.map(
-        ({ institution, startDate, endDate, area, url }) => {
+        ({ institution, startDate, endDate, area, url }: { institution: string; startDate: string; endDate: string; area: string; url: string }) => {
           const startYear = new Date(startDate).getFullYear()
           const endYear =
             endDate != null ? new Date(endDate).getFullYear() : 'Actual'
@@ -56,7 +56,7 @@ import { certificates } from '@cv'
     certificates.length > 0 && (
       <Section className={Astro.props.className} title='Certificates'>
         <ul class='space-y-4 py-3 print:space-y-0'>
-          {certificates.map(({ name, date, issuer, url }) => {
+          {certificates.map(({ name, date, issuer, url }: { name: string; date: string; issuer: string; url: string }) => {
             const certificateYear = new Date(date).getFullYear()
             return (
               <li class='flex items-baseline'>
