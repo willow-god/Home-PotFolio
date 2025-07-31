@@ -63,22 +63,21 @@
 
       "skills": {
         "Go": "simple-icons:go",
-        "Gin" : "simple-icons:gin",
+        "Gin": "simple-icons:gin",
         "HTML5": "simple-icons:html5",
         "CSS3": "ri:css3-fill",
-        "Tailwind": "mdi:tailwind", 
+        "Tailwind": "mdi:tailwind",
         "Bootstrap": "simple-icons:bootstrap",
         "JavaScript ": "simple-icons:javascript",
         "TypeScript": "simple-icons:typescript",
         "Next-Js": "simple-icons:nextdotjs",
         "React": "simple-icons:react",
         "NodeJS": "ri:nodejs-line",
-        
+
         "Bruno": "simple-icons:bruno",
         "Redux": "simple-icons:redux",
         "Git": "mdi:git",
         "GitHub": "mdi:github"
-        
       }
     }
   ],
@@ -150,19 +149,19 @@
       "name": "React",
       "icon": "simple-icons:react",
       "level": "Advanced",
-      "keywords": ["Web Development", "Frontend",  "Static Generation"]
+      "keywords": ["Web Development", "Frontend", "Static Generation"]
     },
     {
       "name": "Go-lang",
       "icon": "simple-icons:go",
       "level": "Advanced",
-      "keywords": ["Web Development", "Frontend",  "Static Generation"]
+      "keywords": ["Web Development", "Frontend", "Static Generation"]
     },
     {
       "name": "Gin",
       "icon": "simple-icons:gin",
       "level": "Advanced",
-      "keywords": ["Web Development", "Frontend",  "Static Generation"]
+      "keywords": ["Web Development", "Frontend", "Static Generation"]
     },
     {
       "name": "Node",
@@ -254,18 +253,41 @@
     }
   ],
   "projects": [
+        {
+      "name": "ParticleFX",
+      "isActive": true,
+      "description": "A lightweight, framework-agnostic JavaScript library that renders interactive particle-based image hover effects using canvas. Customize particle behavior with extensive options for physics, visual effects, and user interaction. Easily integrate into React, Vue, or plain HTML projects by passing a DOM container element.",
+      "highlights": [
+        "🖼️ Image-to-Particles Conversion",
+        "🌀 Dynamic Interactions (Hover, Click, Vortex)",
+        "🎨 Visual Customization (Filters & Shapes)",
+        "🧩 Framework Agnostic Integration",
+        "⚙️ Highly Configurable Physics & Effects",
+        "📱 Responsive to Container Size",
+        "📸 Download Canvas as PNG",
+        "📦 TypeScript Support",
+        "✨ Zero Dependencies"
+      ],
+      "stack": {
+        "JavaScript": "simple-icons:javascript",
+        "TypeScript": "simple-icons:typescript",
+        "CanvasAPI": "mdi:draw",
+        "HTML5": "simple-icons:html5"
+      },
+      "url": "https://particlefx.anmol.pro"
+    },
     {
       "name": "Social Media WebApp",
       "isActive": false,
       "description": "A modern social media application designed for real-time interaction and user engagement",
-       "highlights" : [
+      "highlights": [
         "📝 CRUD Posts (Create, Read, Update, Delete)",
         "💬 Real-time Chat (1:1 and group messaging)",
         "👥 Follow System to connect with others",
         "❤️ Like and react to posts",
         "📞 Group Voice/Video Calling"
       ],
-      
+
       "stack": {
         "Next-Js": "simple-icons:nextdotjs",
         "Redux": "simple-icons:redux",
@@ -273,14 +295,13 @@
         "Socket.io": "simple-icons:socketdotio",
         "Go-lang": "simple-icons:go",
         "Docker": "mdi:docker"
-        
       }
     },
     {
       "name": "Notbasic",
       "isActive": true,
       "description": "An easy-to-use online store where you can browse, shop, and pay securely. It also has a simple admin panel to manage products and track orders smoothly.",
-       "highlights": [
+      "highlights": [
         "🛒 Cart Management",
         "📦 Order Management",
         "🚚 Delivery Tracking",
@@ -303,13 +324,13 @@
       "name": "Music WebApp",
       "isActive": true,
       "description": "A fun and smooth music streaming app where users can discover, play, and enjoy their favorite songs anytime. It features playlists, search, and seamless audio playback for a great listening experience.",
-       "highlights": [
+      "highlights": [
         "🔥 Firebase Integration",
         "🔐 User Authentication",
         "🎵 Playlist Management",
         "🔍 Song Search"
       ],
-      
+
       "stack": {
         "React": "simple-icons:react",
         "tailwind": "mdi:tailwind",
@@ -322,7 +343,7 @@
       "name": "Stone-Su-man",
       "isActive": true,
       "description": "An online shop for selling unique hand-painted stone art, where customers can easily browse, order, and enjoy one-of-a-kind creations.",
-      "highlights" :[
+      "highlights": [
         "🎨 Showcase Hand-Painted Stone Art",
         "🛒 Easy Product Browsing & Cart",
         "💳 Secure Online Payments",

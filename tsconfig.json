@@ -18,8 +18,18 @@
       "@layouts/*": [
         "src/layouts/*"
       ]
-    }
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   },
-  "include": ["global.d.ts", "src", "src/**/*.astro", "src/**/*.ts"],
-  "exclude": ["node_modules", "src/lib"]
+  "include": [
+    "global.d.ts",
+    "src",
+    "src/**/*.astro",
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/lib"
+  ]
 }
