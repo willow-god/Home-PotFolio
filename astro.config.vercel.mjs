@@ -2,8 +2,9 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import icon from 'astro-icon';
-import vercel from "@astrojs/vercel/static";
+import vercel from "@astrojs/vercel/serverless";
 import playformCompress from "@playform/compress";
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,9 +23,9 @@ export default defineConfig({
       Action: {
         Passed: async () => true,   // https://github.com/PlayForm/Compress/issues/376
       },
-    })
+    }),
+    react()
   ],
-  outDir: 'dist',
-  output: 'static',
+  output: "hybrid",
   adapter: vercel()
 });
