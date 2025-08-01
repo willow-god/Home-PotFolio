@@ -6,7 +6,7 @@
     "animated_main_label": "developer",
     "animated_secondary_initial_label": "software",
     "animated_secondary_final_label": "fullstack",
-    "image": "/pfp.webp",
+    "image": "/pfp.jpeg",
     "email": "anmolsingh51200@gmail.com",
     "url": "https://anmol.pro",
     "summary": "Full Stack developer with experience building and deploying production-ready web apps in freelance teams. Delivered two client websites and worked closely with teams to create scalable, maintainable solutions.",
@@ -255,29 +255,28 @@
     }
   ],
   "projects": [
-        {
-      "name": "ParticleFX",
-      "isActive": true,
-      "description": "A lightweight, framework-agnostic JavaScript library that renders interactive particle-based image hover effects using canvas. Customize particle behavior with extensive options for physics, visual effects, and user interaction. Easily integrate into React, Vue, or plain HTML projects by passing a DOM container element.",
-      "highlights": [
-        "🖼️ Image-to-Particles Conversion",
-        "🌀 Dynamic Interactions (Hover, Click, Vortex)",
-        "🎨 Visual Customization (Filters & Shapes)",
-        "🧩 Framework Agnostic Integration",
-        "⚙️ Highly Configurable Physics & Effects",
-        "📱 Responsive to Container Size",
-        "📸 Download Canvas as PNG",
-        "📦 TypeScript Support",
-        "✨ Zero Dependencies"
-      ],
-      "stack": {
-        "JavaScript": "simple-icons:javascript",
-        "TypeScript": "simple-icons:typescript",
-        "CanvasAPI": "mdi:draw",
-        "HTML5": "simple-icons:html5"
-      },
-      "url": "https://particlefx.anmol.pro"
-    },
+{
+  "name": "ParticleFX",
+  "isActive": true,
+  "description": "A zero-dependency JavaScript library to create interactive particle effects from images using canvas. Easily works with React, Vue, or plain HTML. Customize animations, physics, and user interactions.",
+  "highlights": [
+    "🖼️ Turn Images into Particles",
+    "🌀 Hover & Click Effects",
+    "🎨 Custom Shapes & Filters",
+    "⚙️ Configurable Physics",
+    "📱 Responsive Design",
+    "📸 Export as PNG",
+    "📦 TypeScript Ready",
+    "✨ Works Without Any Framework"
+  ],
+  "stack": {
+    "JavaScript": "simple-icons:javascript",
+    "TypeScript": "simple-icons:typescript",
+    "CanvasAPI": "mdi:draw",
+    "HTML5": "simple-icons:html5"
+  },
+  "url": "https://particlefx.anmol.pro"
+},
     {
       "name": "Social Media WebApp",
       "isActive": false,
