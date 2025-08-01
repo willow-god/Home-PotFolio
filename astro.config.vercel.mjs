@@ -26,6 +26,6 @@ export default defineConfig({
     }),
     react()
   ],
-  output: "hybrid",
+  output: "static",
   adapter: vercel()
 });
