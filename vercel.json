@@ -3,8 +3,5 @@
   "framework": {
     "name": "astro",
     "version": "20"
-  },
-  "engines": {
-    "node": "20.x"
   }
 }
