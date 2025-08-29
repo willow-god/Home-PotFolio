@@ -43,13 +43,39 @@
   },
   "work": [
     {
+      "name": "Advika Innovate",
+      "position": "Frontend Developer",
+      "location_type": "Remote",
+      "location": "IN",
+      "url": "https://advikainnovate.com/",
+      "startDate": "2025-07-01",
+      "endDate": null,
+      "summary": "Contributing to a centralized ecommerce platform to manage multiple ecommerce stores from a single interface, including order and inventory management.",
+      "responsibilities": [
+        "Developing and maintaining the frontend of a centralized ecommerce platform.",
+        "Implementing features for order management, inventory control, and other ecommerce functionalities.",
+        "Collaborating with the team to create a scalable and user-friendly platform."
+      ],
+      "skills": {
+        "React": "simple-icons:react",
+        "MUI": "simple-icons:mui",
+        "React Hook Form": "simple-icons:reacthookform",
+        "React Query": "simple-icons:reactquery",
+        "Zod": "simple-icons:zod",
+        "TypeScript": "simple-icons:typescript",
+        "CSS3": "ri:css3-fill",
+        "Git": "mdi:git",
+        "GitHub": "mdi:github"
+      }
+    },
+    {
       "name": "PixelSaffron",
       "position": "Full-Stack Developer",
       "location_type": "Remote",
       "location": "IN",
-      "url": "",
+      "url": "https://pixelsaffron.in/",
       "startDate": "2024-10-03",
-      "endDate": null,
+      "endDate": "2025-06-30",
       "summary": "Led front-end development for a full-stack eCommerce platform built for a Mumbai-based clothing brand. Implemented core features like order management, secure payment integration, and responsive UI for seamless user experience.",
 
       "responsibilities": [
@@ -255,6 +281,22 @@
     }
   ],
   "projects": [
+    {
+      "name": "pixelsaffron",
+      "isActive": true,
+      "description": "A landing page for a startup with beautiful design and smooth animations.",
+      "highlights": [
+        "GSAP animations",
+        "Beautiful design",
+        "Smooth animations"
+      ],
+      "stack": {
+        "Vue": "simple-icons:vuedotjs",
+        "GSAP": "simple-icons:greensock",
+        "Tailwind": "mdi:tailwind"
+      },
+      "url": "https://pixelsaffron.in"
+    },
 {
   "name": "ParticleFX",
   "isActive": true,
