@@ -1,8 +1,0 @@
-{
-  "buildCommand": "astro build --config=./astro.config.vercel.mjs",
-  "build": {
-    "env": {
-      "NODE_VERSION": "22.x"
-    }
-  }
-}

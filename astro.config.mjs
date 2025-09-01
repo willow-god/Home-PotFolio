@@ -4,9 +4,10 @@ import tailwind from "@astrojs/tailwind";
 import astroIcon from 'astro-icon';
 import mdx from '@astrojs/mdx';
 import playformCompress from "@playform/compress";
-import vercel from "@astrojs/vercel/serverless";
 
 import react from "@astrojs/react";
+
+import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
@@ -23,7 +24,7 @@ export default defineConfig({
       Passed: async () => true,  
     },
   }), react()],
-  output: "hybrid",
-  adapter: vercel(),
+  output: "server",
+  adapter: cloudflare(),
   
 });
