@@ -12,7 +12,7 @@
     "deploy:cloudflare": "astro build && wrangler pages deploy ./dist"
   },
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^5.1.1",
