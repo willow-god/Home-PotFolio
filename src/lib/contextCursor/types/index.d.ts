@@ -4,3 +4,5 @@ interface CProps {
   parallaxIndex?: number;
   hoverPadding?: number;
 }
+
+export { CProps };
