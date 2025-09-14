@@ -1,30 +1,31 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import astroIcon from 'astro-icon';
-import mdx from '@astrojs/mdx';
+import icon from 'astro-icon';
+import vercel from "@astrojs/vercel/static";
 import playformCompress from "@playform/compress";
-
-import react from "@astrojs/react";
-
-import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), mdx(), astroIcon({
-    include: {
-      mdi: ["*"],
-      ri: ['*'],
-      'simple-icons': ['*'],
-    },
-  }), playformCompress({
-    CSS: false,
-    Image: false,
-    Action: {
-      Passed: async () => true,  
-    },
-  }), react()],
-  output: "server",
-  adapter: cloudflare(),
-  
+  integrations: [
+    tailwind(),
+    icon({
+      include: {
+        mdi: ["*"],
+        'ri': ['*'],
+        'simple-icons': ['*'],
+      }
+    }),
+    playformCompress({
+      CSS: false,
+      Image: false,
+      Action: {
+        Passed: async () => true,   // https://github.com/PlayForm/Compress/issues/376
+      },
+    })
+  ],
+  outDir: 'dist',
+  output: 'static',
+  // @ts-ignore
+  adapter: vercel()
 });
