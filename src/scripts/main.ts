@@ -4,7 +4,7 @@ const mq = window.matchMedia("(min-width: 640px)");
 if (mq.matches) {
 	contextCursor({
 		radius: 25,
-		transitionSpeed: 0.2,
+		transitionSpeed: 0.1,
 	});
 	
 	const container = document.documentElement;
