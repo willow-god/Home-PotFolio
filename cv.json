@@ -38,6 +38,13 @@
         "color": "#D44638",
         "username": "anmolsingh",
         "url": "mailto:anmolsingh51200@gmail.com"
+      },
+      {
+        "network": "GitHub Stars",
+        "icon": "ri:star-line",
+        "color": "#FBBC05",
+        "username": "Star on GitHub",
+        "url": "https://github.com/Anmol-TheDev/potfolio2.0"
       }
     ]
   },
