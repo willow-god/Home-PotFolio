@@ -30,11 +30,11 @@ To get a local copy up and running, follow these simple steps.
 
 1.  Clone the repo
     ```sh
-    git clone https://github.com/your_username/your_project_name.git
+    git clone https://github.com/Anmol-TheDev/potfolio2.0
     ```
 2.  Install NPM packages
     ```sh
-    npm install
+    pnpm install
     ```
 
 ### Running the Development Server
@@ -42,7 +42,7 @@ To get a local copy up and running, follow these simple steps.
 To run the development server, use the following command:
 
 ```sh
-npm run dev
+pnpm run dev
 ```
 
 This will start the development server at `http://localhost:4321`.
