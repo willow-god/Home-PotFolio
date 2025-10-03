@@ -3,36 +3,71 @@ import { Icon } from 'astro-icon/components'
 ---
 
 <div class='inline-flex items-center print:hidden'>
-  <div
-    class='group/theme flex cursor-pointer items-center gap-2 rounded-md bg-transparent'>
+  <div class='group/theme flex items-center gap-3 rounded-lg bg-transparent'>
+    <!-- 明暗模式切换 -->
     <button
       data-ccursor="lift"
       id='themeSwitch'
-      class='cursor-none'
+      class='theme-toggle-btn cursor-none p-2 rounded-md transition-all duration-200 hover:bg-skin-muted/50'
       aria-label='Toggle dark mode'>
-      <i
-        class='flex items-center gap-1 text-sm font-medium leading-6 text-skin-base transition-transform duration-300 ease-in-out group-hover/theme:rotate-45'>
+      <i class='flex items-center justify-center text-skin-base transition-transform duration-300 ease-in-out group-hover/theme:rotate-12'>
         <Icon
           name='ri:moon-fill'
           class='hidden dark:block sm:hover:text-skin-hue'
-          width={28}
-          height={28}
+          width={24}
+          height={24}
         />
-        <Icon name='ri:sun-fill' class='dark:hidden' width={28} height={28} />
+        <Icon name='ri:sun-fill' class='dark:hidden' width={24} height={24} />
       </i>
     </button>
-    <select
-      data-ccursor
-      id='themeSelect'
-      class='block w-full rounded-md border-0 bg-transparent py-1.5 pl-3 pr-10 ring-1 ring-inset ring-skin-muted focus:ring-2 focus:ring-skin-hue sm:text-sm sm:leading-6 text-skin-hue hover:cursor-none'>
-      <option value='red'>Red</option>
-      <option value='orange'>Orange</option>
-      <option value='cyber'>Cyberpunk</option>
-      <option value='green'>Green</option>
-      <option value='blue'>Blue</option>
-      <option value="platinum">Platinum</option>
-      <option value="sunset">Sunset</option>
-    </select>
+
+    <!-- 主题选择器 -->
+    <div class='theme-selector relative'>
+      <button
+        data-ccursor
+        id='themeTrigger'
+        class='theme-trigger-btn cursor-none flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-skin-hue transition-all duration-200 hover:bg-skin-muted/50'
+        aria-label='Select theme'
+        aria-expanded='false'>
+        <Icon name='ri:palette-fill' width={18} height={18} />
+        <span class='theme-label'>Theme</span>
+        <Icon name='ri:arrow-down-s-line' width={16} height={16} class='transition-transform duration-200' />
+      </button>
+
+      <!-- 自定义下拉菜单 -->
+      <div class='theme-dropdown absolute top-full left-0 mt-1 opacity-0 invisible transition-all duration-200 transform -translate-y-2 z-50'>
+        <div class='theme-menu rounded-lg border shadow-xl backdrop-blur-md min-w-[140px] overflow-hidden'>
+          <button class='theme-option' data-theme='red' data-color='#ef4444'>
+            <span class='theme-dot red'></span>
+            <span>Red</span>
+          </button>
+          <button class='theme-option' data-theme='orange' data-color='#fb923c'>
+            <span class='theme-dot orange'></span>
+            <span>Orange</span>
+          </button>
+          <!-- <button class='theme-option' data-theme='cyber' data-color='#ec4899'>
+            <span class='theme-dot cyber'></span>
+            <span>Cyberpunk</span>
+          </button> -->
+          <button class='theme-option' data-theme='green' data-color='#10b981'>
+            <span class='theme-dot green'></span>
+            <span>Green</span>
+          </button>
+          <button class='theme-option' data-theme='blue' data-color='#3b82f6'>
+            <span class='theme-dot blue'></span>
+            <span>Blue</span>
+          </button>
+          <button class='theme-option' data-theme='platinum' data-color='#e5e7eb'>
+            <span class='theme-dot platinum'></span>
+            <span>Platinum</span>
+          </button>
+          <button class='theme-option' data-theme='sunset' data-color='#f59e0b'>
+            <span class='theme-dot sunset'></span>
+            <span>Sunset</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -41,14 +76,139 @@ import { Icon } from 'astro-icon/components'
     color-scheme: dark;
   }
 
-  select option {
-    background-color: var(--skin-bg);
-    color: var(--skin-base);
+  /* 主题选择器样式 */
+  .theme-selector:hover .theme-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .theme-selector:hover .theme-trigger-btn svg:last-child {
+    transform: rotate(180deg);
+  }
+
+  .theme-menu {
+    /* 设置明确的背景色，确保在亮色和暗色模式下都生效 */
+    background: white;
+    border-color: #e5e7eb;
+    padding: 0.5rem;
+    /* 增强背景与底部的分离感 */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.04),
+                0 0 0 1px rgba(0, 0, 0, 0.05);
+  }
+
+  /* 暗色模式下的背景和边框 */
+  :global(.dark) .theme-menu {
+    background: #1f2937;
+    border-color: #374151;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(255, 255, 255, 0.1);
+  }
+
+  .theme-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: #374151;
+    transition: all 0.15s ease;
+    text-align: left;
+  }
+
+  /* 暗色模式下的文本颜色 */
+  :global(.dark) .theme-option {
+    color: #f3f4f6;
+  }
+
+  .theme-option:hover {
+    background: #f3f4f6;
+  }
+
+  /* 暗色模式下的hover背景 */
+  :global(.dark) .theme-option:hover {
+    background: #374151;
+  }
+
+  .theme-option.active {
+    background: #f3f4f6;
+    font-weight: 600;
+  }
+
+  /* 暗色模式下的active背景 */
+  :global(.dark) .theme-option.active {
+    background: #374151;
+  }
+
+  .theme-option.active .theme-dot {
+    box-shadow: 0 0 0 2px #374151;
+  }
+
+  /* 暗色模式下的active dot边框 */
+  :global(.dark) .theme-option.active .theme-dot {
+    box-shadow: 0 0 0 2px #f3f4f6;
+  }
+
+  .theme-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .theme-dot.red {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+  }
+
+  .theme-dot.orange {
+    background: linear-gradient(135deg, #fb923c, #f97316);
+  }
+
+  .theme-dot.cyber {
+    background: linear-gradient(135deg, #ec4899, #8b5cf6);
+  }
+
+  .theme-dot.green {
+    background: linear-gradient(135deg, #10b981, #059669);
+  }
+
+  .theme-dot.blue {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+  }
+
+  .theme-dot.platinum {
+    background: linear-gradient(135deg, #e5e7eb, #9ca3af);
+  }
+
+  .theme-dot.sunset {
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+  }
+
+  /* 响应式设计 */
+  @media (max-width: 640px) {
+    .theme-label {
+      display: none;
+    }
+    
+    .theme-menu {
+      min-width: 120px;
+    }
   }
 </style>
 
 <script>
   let isDark = document.documentElement.classList.contains('dark')
+
+  // 定义主题类型
+  type ThemeType = 'red' | 'orange' | 'cyber' | 'green' | 'blue' | 'platinum' | 'sunset'
 
   export function toggleDark(event: MouseEvent) {
     const isAppearanceTransition =
@@ -102,6 +262,23 @@ import { Icon } from 'astro-icon/components'
   function updateDataTheme(value: string) {
     document.body.setAttribute('data-theme', value)
     localStorage.setItem('data-theme', value)
+    
+    // 更新活动状态
+    document.querySelectorAll('.theme-option').forEach(btn => {
+      const isActive = btn.getAttribute('data-theme') === value
+      btn.classList.toggle('active', isActive)
+      
+      // 设置选中主题的文本颜色为主题色
+      if (isActive) {
+        const color = btn.getAttribute('data-color')
+        if (color) {
+          (btn as HTMLElement).style.color = color
+        }
+      } else {
+        // 重置其他选项的文本颜色
+        ;(btn as HTMLElement).style.color = ''
+      }
+    })
   }
 
   const themeSwitchButton = document.getElementById('themeSwitch')
@@ -109,18 +286,17 @@ import { Icon } from 'astro-icon/components'
     themeSwitchButton.addEventListener('click', toggleDark)
   }
 
-  const themeSelect = document.getElementById(
-    'themeSelect'
-  ) as HTMLSelectElement
-
-  if (themeSelect) {
-    themeSelect.addEventListener('change', e => {
-      const selectedTheme = (e.target as HTMLSelectElement).value
-      updateDataTheme(selectedTheme)
+  // 主题选项点击事件
+  document.querySelectorAll('.theme-option').forEach(button => {
+    button.addEventListener('click', () => {
+      const theme = button.getAttribute('data-theme')
+      if (theme) {
+        updateDataTheme(theme)
+      }
     })
-  }
+  })
 
-  // Initialize theme based on user preference or system setting
+  // 初始化主题
   if (
     localStorage.theme === 'dark' ||
     (!('theme' in localStorage) &&
@@ -130,18 +306,15 @@ import { Icon } from 'astro-icon/components'
     updateTheme()
   }
 
-  // Initialize data-theme based on stored value or default
+  // 初始化数据主题
   const storedDataTheme =
     localStorage.getItem('data-theme') ||
-    document.body.getAttribute('data-theme')!
+    document.body.getAttribute('data-theme') ||
+    'blue'
 
   updateDataTheme(storedDataTheme)
 
-  if (themeSelect) {
-    themeSelect.value = storedDataTheme
-  }
-
-  // Listen for changes in system color scheme
+  // 监听系统主题变化
   window
     .matchMedia('(prefers-color-scheme: dark)')
     .addEventListener('change', e => {

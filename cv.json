@@ -1,116 +1,98 @@
 {
   "analyticsCode": "",
   "basics": {
-    "name": "Anmol Singh",
+    "name": "Qingyang",
     "label": "Software Developer",
     "animated_main_label": "developer",
     "animated_secondary_initial_label": "software",
     "animated_secondary_final_label": "fullstack",
     "image": "/pfp.jpeg",
-    "email": "anmolsingh51200@gmail.com",
-    "url": "https://anmol.pro",
-    "summary": "Full Stack developer with experience building and deploying production-ready web apps in freelance teams. Delivered two client websites and worked closely with teams to create scalable, maintainable solutions.",
+    "email": "01@liushen.fun",
+    "url": "https://5.b.0.0.9.1.0.0.0.7.4.0.1.0.0.2.ip6.arpa",
+    "summary": "骑行与旅行爱好者，服务器与代码发烧友；全栈软件开发者，热衷用技术把公路、云端和键盘连成线，持续交付可扩展的 Web 方案。",
     "theme": "platinum",
     "location": {
-      "address": "Panipat",
-      "city": "Haryana",
-      "countryCode": "IN",
-      "region": "India"
+      "address": "中国",
+      "city": "上海",
+      "countryCode": "CN",
+      "region": "亚洲"
     },
     "profiles": [
       {
-        "network": "X / Twitter",
-        "icon": "ri:twitter-fill",
+        "network": "Blog",
+        "icon": "ri:pencil-line",
         "color": "#1DA1F2",
-        "username": "@anmolthedev",
-        "url": "https://x.com/anmolthedev"
+        "username": "@QingyangLiu",
+        "url": "https://blog.liushen.fun/"
       },
       {
         "network": "GitHub",
         "icon": "mdi:github",
         "color": "#929AAB",
-        "username": "Anmol-TheDev",
-        "url": "https://github.com/Anmol-TheDev"
+        "username": "willow-god",
+        "url": "https://github.com/willow-god"
       },
       {
         "network": "Email",
         "icon": "ri:mail-fill",
         "color": "#D44638",
-        "username": "anmolsingh",
-        "url": "mailto:anmolsingh51200@gmail.com"
+        "username": "01@liushen.fun",
+        "url": "mailto:01@liushen.fun"
       },
       {
-        "network": "GitHub Stars",
-        "icon": "ri:star-line",
+        "network": "home",
+        "icon": "ri:home-fill",
         "color": "#FBBC05",
-        "username": "Star on GitHub",
-        "url": "https://github.com/Anmol-TheDev/potfolio2.0"
+        "username": "welcome to my home page",
+        "url": "https://www.liushen.fun/"
       }
     ]
   },
   "work": [
     {
-      "name": "Advika Innovate",
-      "position": "Frontend Developer",
-      "location_type": "Remote",
-      "location": "IN",
-      "url": "https://advikainnovate.com/",
-      "startDate": "2025-07-01",
+      "name": "华为技术有限公司",
+      "position": "算法开发师",
+      "location_type": "On-site",
+      "location": "CN",
+      "url": "https://www.huawei.com/cn/",
+      "startDate": "2025-09-21",
       "endDate": null,
-      "summary": "Contributing to a centralized ecommerce platform to manage multiple ecommerce stores from a single interface, including order and inventory management.",
+      "summary": "专注大语言模型架构设计与优化，具体研究方向因保密协议不便透露。",
       "responsibilities": [
-        "Developing and maintaining the frontend of a centralized ecommerce platform.",
-        "Implementing features for order management, inventory control, and other ecommerce functionalities.",
-        "Collaborating with the team to create a scalable and user-friendly platform."
+        "参与大语言模型核心算法研发与系统级优化。",
+        "负责模型训练流程自动化与性能调优。",
+        "协同团队完成前沿算法落地与产品化验证。"
       ],
       "skills": {
-        "React": "simple-icons:react",
-        "MUI": "simple-icons:mui",
-        "React Hook Form": "simple-icons:reacthookform",
-        "React Query": "simple-icons:reactquery",
-        "Zod": "simple-icons:zod",
-        "TypeScript": "simple-icons:typescript",
-        "CSS3": "ri:css3-fill",
+        "PyTorch": "simple-icons:pytorch",
+        "Transformers": "simple-icons:huggingface",
+        "CUDA": "simple-icons:nvidia",
+        "Python": "simple-icons:python",
         "Git": "mdi:git",
-        "GitHub": "mdi:github"
+        "Linux": "simple-icons:linux"
       }
     },
     {
-      "name": "PixelSaffron",
-      "position": "Full-Stack Developer",
-      "location_type": "Remote",
-      "location": "IN",
-      "url": "https://pixelsaffron.in/",
-      "startDate": "2024-10-03",
-      "endDate": "2025-06-30",
-      "summary": "Led front-end development for a full-stack eCommerce platform built for a Mumbai-based clothing brand. Implemented core features like order management, secure payment integration, and responsive UI for seamless user experience.",
-
+      "name": "武汉理工大学",
+      "position": "本科学生",
+      "location_type": "On-site",
+      "location": "CN",
+      "url": "https://www.whut.edu.cn/",
+      "startDate": "2021-10-09",
+      "endDate": "2025-06-21",
+      "summary": "在校期间完成多尺度人群计数研究，结合深度信息提升计数精度；开发并训练超越结巴分词的中文分词模型；设计实现人车实时统计系统。",
       "responsibilities": [
-        "Built and maintained both front-end and back-end components of a production-ready eCommerce web app using modern web technologies.",
-        "Focused on building scalable, responsive, and maintainable front-end features, ensuring high performance and usability.",
-        "Integrated payment gateways and developed order management features to support real-time order processing.",
-        "Collaborated with clients and team members to align technical solutions with business needs.",
-        "Ensured clean, modular code and implemented best practices for performance optimization and maintainability.",
-        "Developed and connected RESTful APIs to handle key business logic and data flow between client and server."
+        "基于深度学习的多尺度人群计数算法研究与实现，结合深度信息优化模型性能。",
+        "独立训练并优化中文分词模型，在公开数据集上超越结巴分词效果。",
+        "开发实时人车统计系统，实现视频流中的车辆与行人检测与计数。"
       ],
-
       "skills": {
-        "Go": "simple-icons:go",
-        "Gin": "simple-icons:gin",
-        "HTML5": "simple-icons:html5",
-        "CSS3": "ri:css3-fill",
-        "Tailwind": "mdi:tailwind",
-        "Bootstrap": "simple-icons:bootstrap",
-        "JavaScript ": "simple-icons:javascript",
-        "TypeScript": "simple-icons:typescript",
-        "Next-Js": "simple-icons:nextdotjs",
-        "React": "simple-icons:react",
-        "NodeJS": "ri:nodejs-line",
-
-        "Bruno": "simple-icons:bruno",
-        "Redux": "simple-icons:redux",
-        "Git": "mdi:git",
-        "GitHub": "mdi:github"
+        "Python": "simple-icons:python",
+        "PyTorch": "simple-icons:pytorch",
+        "OpenCV": "simple-icons:opencv",
+        "CUDA": "simple-icons:nvidia",
+        "Linux": "simple-icons:linux",
+        "Git": "mdi:git"
       }
     }
   ],
@@ -289,127 +271,120 @@
   ],
   "projects": [
     {
-      "name": "pixelsaffron",
+      "name": "Friend-Circle-Lite",
       "isActive": true,
-      "description": "A landing page for a startup with beautiful design and smooth animations.",
+      "description": "一个轻量级、无需后端的友链朋友圈工具，使用 GitHub Actions 定时抓取并输出 JSON，兼容 FC 格式。",
       "highlights": [
-        "GSAP animations",
-        "Beautiful design",
-        "Smooth animations"
+        "无服务端依赖",
+        "GitHub Actions 定时抓取",
+        "兼容 FC JSON 格式",
+        "支持邮件更新推送",
+        "轻量 & 易部署"
+      ],
+      "stack": {
+        "Python": "simple-icons:python",
+        "GitHub Actions": "simple-icons:githubactions",
+        "JSON": "simple-icons:json",
+        "HTML": "simple-icons:html5",
+        "YAML": "simple-icons:yaml"
+      },
+      "url": "https://github.com/willow-god/Friend-Circle-Lite"
+    },
+    {
+      "name": "FlareDrive-R2",
+      "isActive": true,
+      "description": "基于 Cloudflare R2 + Workers 构建的在线网盘系统，支持文件上传/下载/分享与多用户权限管理。",
+      "highlights": [
+        "文件上传 / 下载 / 分享",
+        "多用户权限控制",
+        "目录级访问控制",
+        "静态文件托管",
+        "Cloudflare Workers + R2 集成",
+        "界面美化 & 部署简化"
       ],
       "stack": {
         "Vue": "simple-icons:vuedotjs",
-        "GSAP": "simple-icons:greensock",
-        "Tailwind": "mdi:tailwind"
-      },
-      "url": "https://pixelsaffron.in"
-    },
-{
-  "name": "ParticleFX",
-  "isActive": true,
-  "description": "A zero-dependency JavaScript library to create interactive particle effects from images using canvas. Easily works with React, Vue, or plain HTML. Customize animations, physics, and user interactions.",
-  "highlights": [
-    "🖼️ Turn Images into Particles",
-    "🌀 Hover & Click Effects",
-    "🎨 Custom Shapes & Filters",
-    "⚙️ Configurable Physics",
-    "📱 Responsive Design",
-    "📸 Export as PNG",
-    "📦 TypeScript Ready",
-    "✨ Works Without Any Framework"
-  ],
-  "stack": {
-    "JavaScript": "simple-icons:javascript",
-    "TypeScript": "simple-icons:typescript",
-    "CanvasAPI": "mdi:draw",
-    "HTML5": "simple-icons:html5"
-  },
-  "url": "https://particlefx.anmol.pro"
-},
-    {
-      "name": "Social Media WebApp",
-      "isActive": false,
-      "description": "A modern social media application designed for real-time interaction and user engagement",
-      "highlights": [
-        "📝 CRUD Posts (Create, Read, Update, Delete)",
-        "💬 Real-time Chat (1:1 and group messaging)",
-        "👥 Follow System to connect with others",
-        "❤️ Like and react to posts",
-        "📞 Group Voice/Video Calling"
-      ],
-
-      "stack": {
-        "Next-Js": "simple-icons:nextdotjs",
-        "Redux": "simple-icons:redux",
-        "PostGres": "simple-icons:postgresql",
-        "Socket.io": "simple-icons:socketdotio",
-        "Go-lang": "simple-icons:go",
-        "Docker": "mdi:docker"
-      }
-    },
-    {
-      "name": "Notbasic",
-      "isActive": true,
-      "description": "An easy-to-use online store where you can browse, shop, and pay securely. It also has a simple admin panel to manage products and track orders smoothly.",
-      "highlights": [
-        "🛒 Cart Management",
-        "📦 Order Management",
-        "🚚 Delivery Tracking",
-        "👛 Wallet Integration",
-        "💳 Secure Payment Gateway",
-        "🧾 Invoice & Billing",
-        "🛍️ Product Browsing & Filtering",
-        "📊 Admin Dashboard"
-      ],
-      "stack": {
-        "Next-Js": "simple-icons:nextdotjs",
-        "Redux": "simple-icons:redux",
         "TypeScript": "simple-icons:typescript",
-        "NodeJS": "ri:nodejs-line",
-        "Mongodb": "simple-icons:mongodb"
+        "Cloudflare Workers": "simple-icons:cloudflare",
+        "R2": "simple-icons:cloudflare",
+        "CSS": "simple-icons:css3"
       },
-      "url": "https://notbasic.in/"
+      "url": "https://github.com/willow-god/FlareDrive-R2"
     },
     {
-      "name": "Music WebApp",
+      "name": "hexo-safego",
       "isActive": true,
-      "description": "A fun and smooth music streaming app where users can discover, play, and enjoy their favorite songs anytime. It features playlists, search, and seamless audio playback for a great listening experience.",
+      "description": "Hexo 插件，用于优化外链跳转和安全重定向，基于 `hexo-external-link` 二次开发，提升页面响应效率。",
       "highlights": [
-        "🔥 Firebase Integration",
-        "🔐 User Authentication",
-        "🎵 Playlist Management",
-        "🔍 Song Search"
+        "外链跳转优化",
+        "在构建阶段替换链接",
+        "使用 Cheerio 解析 & 替换",
+        "减少运行时开销",
+        "兼容 Hexo 生态"
       ],
-
       "stack": {
-        "React": "simple-icons:react",
-        "tailwind": "mdi:tailwind",
-        "Rest-Api": "mdi:api"
+        "Node.js": "simple-icons:nodedotjs",
+        "JavaScript": "simple-icons:javascript",
+        "Cheerio": "simple-icons:cheerio",
+        "Hexo": "simple-icons:hexo",
+        "HTML": "simple-icons:html5"
       },
-      "github": "https://github.com/Anmol-TheDev/Music_app",
-      "url": "https://music.anmol.pro"
+      "url": "https://github.com/willow-god/hexo-safego"
     },
     {
-      "name": "Stone-Su-man",
+      "name": "check-flink",
       "isActive": true,
-      "description": "An online shop for selling unique hand-painted stone art, where customers can easily browse, order, and enjoy one-of-a-kind creations.",
+      "description": "一个用于检查友链链接是否可用的工具，自动化检测链接状态以减轻手动维护负担。",
       "highlights": [
-        "🎨 Showcase Hand-Painted Stone Art",
-        "🛒 Easy Product Browsing & Cart",
-        "💳 Secure Online Payments",
-        "📦 Order & Delivery Tracking",
-        "📸 High-Quality Artwork Images",
-        "📱 Mobile-Friendly Design"
+        "批量检测友链链接状态",
+        "自动剔除失效链接",
+        "支持定期检测",
+        "简化友链维护工作"
       ],
       "stack": {
-        "React": "simple-icons:react",
-        "TypeScript": "simple-icons:typescript",
-        "tailwind": "mdi:tailwind",
-        "Vite": "simple-icons:vite",
-        "PNPM": "simple-icons:pnpm",
-        "Hostinger": "simple-icons:hostinger"
+        "Node.js": "simple-icons:nodedotjs",
+        "JavaScript": "simple-icons:javascript",
+        "HTTP": "simple-icons:linkerd",
+        "CLI": "simple-icons:iterm2"
       },
-      "url": "https://stone-su-man.com/"
+      "url": "https://github.com/willow-god/check-flink"
+    },
+    {
+      "name": "daily-image",
+      "isActive": true,
+      "description": "每日图片推送 / 获取工具，自动抓取或更新每日图片到指定用途（如博客、壁纸等）。",
+      "highlights": [
+        "自动获取每日图片",
+        "可配置源 / API",
+        "支持缓存与本地存储",
+        "易于集成到博客 / 网站"
+      ],
+      "stack": {
+        "Node.js": "simple-icons:nodedotjs",
+        "JavaScript": "simple-icons:javascript",
+        "HTTP / REST": "mdi:api",
+        "Cron / Scheduler": "mdi:timer"
+      },
+      "url": "https://github.com/willow-god/daily-image"
+    },
+    {
+      "name": "hexo-ai-summary",
+      "isActive": true,
+      "description": "Hexo 插件，为文章生成 AI 摘要（或概述），在博客构建时自动插入摘要内容。",
+      "highlights": [
+        "AI 智能摘要生成",
+        "构建时自动插入",
+        "支持多篇文章摘要",
+        "兼容 Hexo 文章流程"
+      ],
+      "stack": {
+        "Node.js": "simple-icons:nodedotjs",
+        "JavaScript": "simple-icons:javascript",
+        "OpenAI / AI 接口": "simple-icons:openai",
+        "Hexo": "simple-icons:hexo",
+        "Markdown": "simple-icons:markdown"
+      },
+      "url": "https://github.com/willow-god/hexo-ai-summary"
     }
   ]
 }
