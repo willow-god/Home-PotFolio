@@ -288,7 +288,8 @@
         "HTML": "simple-icons:html5",
         "YAML": "simple-icons:yaml"
       },
-      "url": "https://github.com/willow-god/Friend-Circle-Lite"
+      "url": "https://github.com/willow-god/Friend-Circle-Lite",
+      "github": "https://github.com/willow-god/Friend-Circle-Lite"
     },
     {
       "name": "FlareDrive-R2",
@@ -309,7 +310,8 @@
         "R2": "simple-icons:cloudflare",
         "CSS": "simple-icons:css3"
       },
-      "url": "https://github.com/willow-god/FlareDrive-R2"
+      "url": "https://github.com/willow-god/FlareDrive-R2",
+      "github": "https://github.com/willow-god/FlareDrive-R2"
     },
     {
       "name": "hexo-safego",
@@ -329,7 +331,8 @@
         "Hexo": "simple-icons:hexo",
         "HTML": "simple-icons:html5"
       },
-      "url": "https://github.com/willow-god/hexo-safego"
+      "url": "https://github.com/willow-god/hexo-safego",
+      "github": "https://github.com/willow-god/hexo-safego"
     },
     {
       "name": "check-flink",
@@ -347,7 +350,8 @@
         "HTTP": "simple-icons:linkerd",
         "CLI": "simple-icons:iterm2"
       },
-      "url": "https://github.com/willow-god/check-flink"
+      "url": "https://github.com/willow-god/check-flink",
+      "github": "https://github.com/willow-god/check-flink"
     },
     {
       "name": "daily-image",
@@ -365,7 +369,8 @@
         "HTTP / REST": "mdi:api",
         "Cron / Scheduler": "mdi:timer"
       },
-      "url": "https://github.com/willow-god/daily-image"
+      "url": "https://github.com/willow-god/daily-image",
+      "github": "https://github.com/willow-god/daily-image"
     },
     {
       "name": "hexo-ai-summary",
@@ -384,7 +389,8 @@
         "Hexo": "simple-icons:hexo",
         "Markdown": "simple-icons:markdown"
       },
-      "url": "https://github.com/willow-god/hexo-ai-summary"
+      "url": "https://github.com/willow-god/hexo-ai-summary",
+      "github": "https://github.com/willow-god/hexo-ai-summary"
     }
   ]
 }
